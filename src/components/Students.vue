@@ -17,12 +17,16 @@
 
 <script>
 import axios from "axios";
+import { mapState } from "vuex";
 
 export default {
     data() {
         return {
         }
     },
+  computed: mapState({
+      students: state => state.students
+  }),
   async created() {
   }
 };
